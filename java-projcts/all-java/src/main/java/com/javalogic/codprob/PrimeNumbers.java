@@ -3,19 +3,19 @@ package com.javalogic.codprob;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Factors {
+public class PrimeNumbers {
 
     static List<Integer> facList = new ArrayList<>();
     public static void main(String[] args) {
-        Factors f = new Factors();
-        for (int i = 15 ; i <= 21; i++) {
+        PrimeNumbers f = new PrimeNumbers();
+        for (int i = 2 ; i <= 9923; i++) {
             int res = f.factors(i);
             //System.out.println("number="+i);
             facList.add(res);
-            //if(facList.size()==2) {
+            if(facList.size()==2) {
                 System.out.println("number="+i);
                 System.out.println("factors:" + facList);
-            //}
+            }
             facList = new ArrayList<>();
             divisor = 2;
         }
