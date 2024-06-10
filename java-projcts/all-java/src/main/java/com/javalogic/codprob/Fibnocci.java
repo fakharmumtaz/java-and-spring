@@ -1,38 +1,30 @@
 package com.javalogic.codprob;
 
 public class Fibnocci {
-
-    static  int result = 1;
     public static void main(String[] args) {
-        //System.out.println("Hello world");
-        // reverse a string
-        String str = "Hello";
-
-        System.out.println(str);
-
-        StringBuilder sb = new StringBuilder(str);
-
-        System.out.println(sb.reverse().toString());
-        getFibnoci(10, 1);
+        int res = getFibnoci1(90);
+        //System.out.println(res);
+        printFibonacci(10);
     }
 
-    public static void getFibnoci(int num, int num2) {
-        int count =  num2;
-        //if (num == 1)        return 1;
+    private static void printFibonacci(int num) {
+        int x = 0, y = 1, res=0;
+        for (int i = 0 ; i < num; i++){
+            res  =  x + y;
+            System.out.println(res);
+            x = y;
+            y = res;
+        }
+    }
 
-        if(count < 10)
-            return ;
+    public static int getFibnoci1(int n) {
 
-        System.out.println(result);
+        if(n <= 1)
+            return n;
 
-        result = result + num2;
+        //System.out.println(n);
 
-        getFibnoci(count--, num2);
-
-
-
-        //return  result;
-
+        return getFibnoci1(n-1) + getFibnoci1(n-2);
     }
 }
 //
