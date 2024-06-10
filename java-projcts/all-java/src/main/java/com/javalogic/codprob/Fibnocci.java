@@ -2,8 +2,8 @@ package com.javalogic.codprob;
 
 public class Fibnocci {
     public static void main(String[] args) {
-        int num = 10;
-        printFibonacci(num);
+        int num = 30;
+        //printFibonacci(num);
         System.out.println();
         printFibonacci1(num);
         System.out.println();
