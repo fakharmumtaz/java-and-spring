@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Students {
-    private int Age;
-    private String Name;
-    private String className;
+    private final int Age;
+    private final String Name;
+    private final String className;
 
     public Students(int age,String Name,String className){
         this.Age=age;
@@ -27,12 +27,15 @@ public class Students {
         return Age;
     }
     public static List<Students> students(){
-        Students first=new Students(4,"Ali","Blue");
+        Students first=new Students(14,"Ali","Blue");
         Students second=new Students(24,"Alina","Pink");
         Students third=new Students(11,"Alisha","Green");
         Students fourth=new Students(35,"Aliam","Pink");
         Students fifth=new Students(10,"Aliza","Green");
-        List<Students> students=Arrays.asList(first,second,third,fourth,fifth);
+        Students std=new Students(21,"Rahat","Parvaiz");
+        Students std1=new Students(23,"Babar","Rana");
+        Students std2=new Students(23,"Aditya","Palsa");
+        List<Students> students=Arrays.asList(first,second,third,fourth,fifth,std,std1,std2);
         return students;
     }
 }

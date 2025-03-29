@@ -7,11 +7,13 @@ public class CountOfTripleChars {
         String str = "aabaaaaabbbccccaa";
         char[] cArr = str.toCharArray();
         int count = 0;
-        char prevC ;
+        //char prevC ;
+        char[] a = new char[1];
+        System.out.println(a);
         //Map<String, Integer> map = new HashMap<>();
-        char c=' ', c1=' ', c2 = ' ' ;
+        char c, c1, c2 ;
         //System.out.println("c="+c +", c1=" +  c1 + ", c2=" + c2);
-        if(cArr.length >= 3){
+        if(cArr!= null && cArr.length >= 3){
             for(int i = 0; i < cArr.length; i++){
                 c = cArr[i];
                 if(i+1 < cArr.length)

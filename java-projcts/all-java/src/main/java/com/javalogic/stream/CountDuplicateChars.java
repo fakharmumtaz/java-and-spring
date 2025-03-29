@@ -8,8 +8,10 @@ public class CountDuplicateChars {
             // given input string
             String input = "JavaJavaEEb";
 
-            //input.chars().forEach(System.out::println);
-            ///input.chars().mapToObj(c -> new Character((char)c)).forEach(System.out::println);
+            input.chars().forEach(System.out::println);
+            System.out.println("----------");
+            input.chars().mapToObj(c -> (char)c).forEach(System.out::println);
+            System.out.println("......................");
 
             // convert string into stream
             Map< Character, Long > result =

@@ -25,7 +25,7 @@ public class CollectorsInJava {
         System.out.println("stdByClassNameAndName=" + stdByClassNameAndName);
         stdByClassNameAndName.forEach(
                 (k, v) -> System.out.println("Key: " + k + " " + " "
-                + "Names: " + v.stream().map(m -> m.getName()).collect(Collectors.joining(",")))
+                + "Names: " + v.stream().map(m -> m.getName()).collect(Collectors.joining("::")))
         );
         System.out.println("\n-----for Using Grouping By twice in Collect method: use multi-map level ..thats not accurate");
         Map<String, Map<String, List<Students>>> stdByClassNameAndNameAge = Students.students().stream()

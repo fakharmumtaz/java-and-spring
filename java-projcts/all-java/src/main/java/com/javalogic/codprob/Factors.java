@@ -4,17 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Factors {
-
-    static List<Integer> facList = new ArrayList<>();
+    List<Integer> facList = new ArrayList<>();
     public static void main(String[] args) {
+
         Factors f = new Factors();
-        for (int i = 15 ; i <= 21; i++) {
-            int res = f.factors(i);
+        f.factoring();
+    }
+
+    public void factoring(){
+        for (int i = 15 ; i <= 15; i++) {
+            int res = factors(i);
             //System.out.println("number="+i);
             facList.add(res);
             //if(facList.size()==2) {
-                System.out.println("number="+i);
-                System.out.println("factors:" + facList);
+            System.out.println("number="+i);
+            System.out.println("factors:" + facList);
             //}
             facList = new ArrayList<>();
             divisor = 2;
@@ -22,7 +26,7 @@ public class Factors {
     }
 
     // Method  To compute factors
-    public static int factors(int n) {
+    public int factors(int n) {
         if (n <= 1)
             return 1;
 

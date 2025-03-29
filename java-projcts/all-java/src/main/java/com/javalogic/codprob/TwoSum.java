@@ -10,7 +10,7 @@ public class TwoSum {
         //int target = 4;
 
         int[] a = {1, 4, 5, 6, -3};
-        int target = 8;
+        int target = 3;
 
         System.out.println("Target = " + target);
         s.printArr(a);
@@ -25,8 +25,8 @@ public class TwoSum {
     }
     public int[] twoSum(int[] nums, int target) {
         int[] b = new int[2];
-        int n = 0;
-        int n1 = 0, n2=0;
+        //int n = 0;
+        int n1, n2;
         int k =  -1 ;
         b[0] = k;
         b[1] = k;
@@ -42,8 +42,6 @@ public class TwoSum {
                 b[1]= i;
                 break;
             }
-
-
         }
         return b;
     }
@@ -51,7 +49,7 @@ public class TwoSum {
     public void printArr(int[] ar) {
         if(ar != null ) {
             for(int i = 0; i < ar.length; i++) {
-                System.out.println("ar["+(i+0)+"]  = "+ar[i]);
+                System.out.println("ar["+(i)+"]  = "+ar[i]);
             }
         }
     }

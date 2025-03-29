@@ -29,17 +29,12 @@ public class UseOfComparator {
             return 0;
         };
 
- /*       Comparator<Student> sortOnName = (ob1, ob2) -> {
-            if(ob1.getStudentName().compareTo( ob2.getStudentName())
-                return -1
-            if(ob1.getStudentId() == ob2.getStudentId())
-                return 0;
-            if(ob1.getStudentId() > ob2.getStudentId())
-                return 1;
-        };
-*/
+        Comparator<Student> sortOnName = (ob1, ob2) ->
+             ob1.getStudentName().compareTo( ob2.getStudentName());
 
         studentList.stream().sorted( sortOnId).forEach(System.out::println);
+        System.out.println();
+        studentList.stream().sorted( sortOnName).forEach(System.out::println);
 
       }
 }

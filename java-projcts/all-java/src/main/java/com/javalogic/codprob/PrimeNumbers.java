@@ -6,10 +6,11 @@ import java.util.List;
 public class PrimeNumbers {
 
     static List<Integer> facList = new ArrayList<>();
+    static int divisor = 2;
     public static void main(String[] args) {
-        PrimeNumbers f = new PrimeNumbers();
+        //PrimeNumbers f = new PrimeNumbers();
         for (int i = 2 ; i <= 9923; i++) {
-            int res = f.factors(i);
+            int res = PrimeNumbers.factors(i);
             //System.out.println("number="+i);
             facList.add(res);
             if(facList.size()==2) {
@@ -37,5 +38,5 @@ public class PrimeNumbers {
         }
         return  factors(n);
     }
-    static int divisor = 2;
+
 }
