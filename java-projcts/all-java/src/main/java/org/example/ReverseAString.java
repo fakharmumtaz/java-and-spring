@@ -1,6 +1,6 @@
 package org.example;
 
-public class Main {
+public class ReverseAString {
     public static void main(String[] args) {
         //System.out.println("Hello world!");
         // [9:24 PM] Ajayraj //provide a program to reverse a string using recursion

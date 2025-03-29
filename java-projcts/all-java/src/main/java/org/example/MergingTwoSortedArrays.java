@@ -1,15 +1,8 @@
-// Employee record
-// Duplicate employee records
-// remove duplicate records
-//
-
-
+// Employee record  Duplicate employee records  remove duplicate records
 package org.example;
 
 // two sorted arrays - merging two sorted arrays - should not use additional memory space
-//
-public class Main1 {
-
+public class MergingTwoSortedArrays {
     public static void main(String[] args) {
         int[] a = new int[8]; //  {5, 13, 17};
         a[0] = 5;
@@ -30,10 +23,8 @@ public class Main1 {
         for(int i = 3 ; i < a.length -1   ; i++){
             int elementb = b[i-3];
             a[i] = elementb;
-
             //System.out.println(elementb);
         }
-
         for(int i = 0 ; i < a.length   ; i++){
             int elementa = a[i];
             System.out.println(elementa);
@@ -70,12 +61,14 @@ public class Main1 {
                    a[0] = b[0];
             /// }
         }
-
      //a[] = { 0 1 2 3 4 5 6 7 }
-        for(int i = 0 ; i < a.length   ; i++){
+        /*for(int i = 0 ; i < a.length   ; i++){
             int elementa = a[i];
             System.out.println(elementa);
-        }
+        } */
 
+        for(int v : a){
+            System.out.println(v);
+        }
     }
 }
