@@ -6,9 +6,11 @@ public class PdfFilesMerge {
         public static void main(String[] args) {
             // Folder path containing PDFs
             String folderPath = "F:/Documents/fakhar/MyCaseInCourt/CivilSuit/s_pdfs";
+            //String folderPath = "F:\\Documents\\fakhar\\pdfMerge";
 
             // Output merged PDF file
-            String outputFilePath = "F:/Documents/fakhar/MyCaseInCourt/CivilSuit/s_pdfs/final_merged.pdf";
+            String outputFilePath = "F:\\Documents\\fakhar\\MyCaseInCourt\\CivilSuit\\s_pdfs\\letterSignedInPostoffice.pdf";
+            //String outputFilePath = "F:\\Documents\\fakhar\\pdfMerge\\Department of Tax Admini DTA CountyOfFirfax Auto Fakhar n Zeb.pdf";
 
             // Create PDFMergerUtility instance
             PDFMergerUtility pdfMerger = new PDFMergerUtility();
