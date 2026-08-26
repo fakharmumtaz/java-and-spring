@@ -13,7 +13,7 @@ public class Fibnocci {
         }
     }
 
-    /*private static void printFibonacci(int num) {
+    private static void printFibonacci3(int num) {
         int x = 0, y = 1, res=0;
         for (int i = 0 ; i < num; i++){
             res  =  x + y;
@@ -21,7 +21,7 @@ public class Fibnocci {
             x = y;
             y = res;
         }
-    }*/
+    }
 
     private static void printFibonacci1(int num) {
         int x = 1, y = 1, z;
