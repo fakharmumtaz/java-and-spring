@@ -9,13 +9,18 @@ public class PrimeNumbers {
     static int divisor = 2;
     public static void main(String[] args) {
         //PrimeNumbers f = new PrimeNumbers();
-        for (int i = 2 ; i <= 9923; i++) {
-            int res = PrimeNumbers.factors(i);
+        for (int i = 2 ; i <= 200; i++) {
+            int res = factors(i);
             //System.out.println("number="+i);
             facList.add(res);
-            if(facList.size()==2) {
-                System.out.println("number="+i);
-                System.out.println("factors:" + facList);
+            String ind = "   "+i;
+            String ind1 = ind.substring(ind.length() - 4);
+
+            if(facList.size()==2 || true) {
+                System.out.print("number ="+ind1);
+                System.out.println(", factors: " + facList);
+            } else {
+
             }
             facList = new ArrayList<>();
             divisor = 2;
