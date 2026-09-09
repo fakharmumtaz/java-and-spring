@@ -5,11 +5,12 @@ package com.javalogic.codprob;
 public class CountOfTripleChars {
     public static void main(String[] args) {
         String str = "aabaaaaabbbccccaa";
+        System.out.println(str);
         char[] cArr = str.toCharArray();
         int count = 0;
         //char prevC ;
-        char[] a = new char[1];
-        System.out.println(a);
+        //char[] a = new char[1];
+        //System.out.println(a);
         //Map<String, Integer> map = new HashMap<>();
         char c, c1, c2 ;
         //System.out.println("c="+c +", c1=" +  c1 + ", c2=" + c2);
@@ -27,7 +28,7 @@ public class CountOfTripleChars {
 
                 System.out.println("c="+c +", c1=" +  c1 + ", c2=" + c2);
                 //if(new String(c).equals(new String(c1))  && new String(c1).equals(new String(c2))) {
-                if( (int)c == (int)c1 && (int)c1 == (int)c2 && (int)c != ' ') {
+                if( (int)c == (int)c1 && (int)c1 == (int)c2 && (int)c != 32) {
                     count++;
                     i+=2;
                     System.out.println("--------------------");
