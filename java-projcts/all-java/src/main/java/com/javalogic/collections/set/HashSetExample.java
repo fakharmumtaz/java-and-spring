@@ -1,4 +1,4 @@
-package com.javalogic.set;
+package com.javalogic.collections.set;
 
 import java.util.*;
 
