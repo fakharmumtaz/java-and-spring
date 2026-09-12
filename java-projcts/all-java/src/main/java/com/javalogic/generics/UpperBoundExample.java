@@ -7,7 +7,11 @@ class Animal1 {
 }
 
 class Dog1 extends Animal1 {
-    void bark() { System.out.println("Woof!"); }
+    void makeSound() { System.out.println("Woof!"); }
+}
+
+class Labrador1 extends Dog1 {
+    void makeSound() { System.out.println("Labr!"); }
 }
 
 /*
@@ -26,9 +30,9 @@ public class UpperBoundExample {
     }
 
     public static void main(String[] args) {
-        List<Dog1> dogs = Arrays.asList(new Dog1(), new Dog1(), new Dog1());
-        dogs.add(new Dog1());
+        List<Animal1> dogs = Arrays.asList(new Animal1(), new Dog1(), new Dog1(), new Labrador1());
+        //dogs.add(new Dog1());
         makeAnimalsSound(dogs);
-        dogs.add(new Dog1());
+        //dogs.add(new Dog1());
     }
 }
