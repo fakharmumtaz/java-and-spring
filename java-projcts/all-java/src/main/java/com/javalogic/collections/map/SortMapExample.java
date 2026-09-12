@@ -25,5 +25,17 @@ public class SortMapExample {
 
         System.out.println(sortedMap);
         // Output: {C++=70, Java=85, Python=95}
+
+        Map<String, Integer> map1 = new HashMap<>();
+        map1.put("Java", 125);
+        map1.put("Python", 95);
+        map1.put("C++", 100);
+
+        LinkedHashMap<String, Integer> collect = map1.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(Collectors.toMap(
+                Map.Entry::getKey,
+                Map.Entry::getValue,
+                (o, n) -> o,
+                LinkedHashMap::new));
+        System.out.println(collect);
     }
 }
