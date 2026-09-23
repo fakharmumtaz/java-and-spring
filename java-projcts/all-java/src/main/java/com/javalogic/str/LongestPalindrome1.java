@@ -6,8 +6,23 @@ public class LongestPalindrome1 {
         Boolean b = checkPalindrome(s);
         System.out.println("Palindrome : " + b);
 
-        allSubStrs("abc" ); /// [a, ab, abc, b, bc, c] // a, b, c, ab, bc, abc,
-        allSubStrs("abcdef" );
+        String strArr[] = allSubStrs("abc" ); /// [a, ab, abc, b, bc, c] // a, b, c, ab, bc, abc,
+        //strArr = allSubStrs("abcdef" );
+        strArr = allSubStrs("abba" );
+        String[] palins = new String[10];
+        int x = 0;
+
+        for (int i = 0; i < strArr.length; i++) {
+            if(checkPalindrome(strArr[i])) {
+                System.out.println(strArr[i] + " is a Palindrome");
+                palins[x++] = strArr[i];
+            } else
+                System.out.println(strArr[i] + " is not a Palindrome");
+        }
+
+        for (int i = 0; i < palins.length; i++) {
+            System.out.println(palins[i]);
+        }
     }
 
     static boolean checkPalindrome(String s){
@@ -33,10 +48,10 @@ public class LongestPalindrome1 {
         int start = 0;
         int ind = 0 ;
         for (int i = 0; i < s.length() ; i++) {
-            start = i ;
             for (int j = i+1; j <= s.length()  ; j++) {
-                String temp = s.substring(start,  j);
-                System.out.println(temp);
+                String temp = s.substring(i,  j);
+                str[ind++] = temp;
+                System.out.println(str[ind-1]);
             }
         }
         return str;
