@@ -1,7 +1,6 @@
 package com.javalogic.str;
 
 import java.util.HashMap;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class LongestPalindrome {
