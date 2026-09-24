@@ -22,9 +22,10 @@ public class Anagram {
         Arrays.sort(str2);
 
         // Compare sorted strings
-        for (int i = 0; i < n1; i++)
+        for (int i = 0; i < n1; i++) {
             if (str1[i] != str2[i])
                 return false;
+        }
 
         return true;
     }
@@ -36,7 +37,12 @@ public class Anagram {
         char str2[] = { 'g', 'a', 'r', 'd', 'u', 'n' };
         int inta[] = {1, 2, 3};
         //Stream<Character> charStream =
-                new String(str1).chars().mapToObj(c -> (char) c).forEach(System.out::print);
+        new String(str1).chars().mapToObj(c -> (char) c).forEach(System.out::print);
+
+        System.out.println("---");
+
+        new String(str2).chars().mapToObj(c -> (char) c).forEach(System.out::print);
+
         //System.out.println(Arrays.toString(str1) +"|"+ Arrays.toString(str2));
         //IntStream is = Stream.of(str1).flatMapToInt(IntStream::of);    is.forEach(System.out::println);
         //String collect = Arrays.stream(inta).mapToObj(a->""+a).collect(Collectors.joining(","));

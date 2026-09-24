@@ -8,8 +8,8 @@ public class LongestPalindrome1 {
 
         String strArr[] = allSubStrs("abc" ); /// [a, ab, abc, b, bc, c] // a, b, c, ab, bc, abc,
         //strArr = allSubStrs("abcdef" );
-        strArr = allSubStrs("abba" );
-        String[] palins = new String[10];
+        strArr = allSubStrs("abbabaab" );
+        String[] palins = new String[20];
         int x = 0;
 
         for (int i = 0; i < strArr.length; i++) {
@@ -19,7 +19,7 @@ public class LongestPalindrome1 {
             } else
                 System.out.println(strArr[i] + " is not a Palindrome");
         }
-
+        System.out.println("all the palendromes : ");
         for (int i = 0; i < palins.length; i++) {
             System.out.println(palins[i]);
         }
