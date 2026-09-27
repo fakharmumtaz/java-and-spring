@@ -14,7 +14,7 @@ public class PyramidPattern {
             if(rows<=0) break;
 
             // Outer loop handles the number of rows
-            for (int i = 1; i <= rows; i++) {
+            for (int i = 1; i <= rows ; i++) {
 
                 // Inner loop 1: Prints the leading spaces for alignment
                 for (int j = 1; j <= rows - i; j++) {
@@ -23,7 +23,7 @@ public class PyramidPattern {
 
                 // Inner loop 2: Prints the stars
                 // The formula (2 * i - 1) ensures an odd number of stars per row
-                for (int k = 1; k <= (2 * i - 1); k++) {
+                for (int k = 1; k <= ((2 * i) - 1); k++) {
                     System.out.print("*");
                 }
 
