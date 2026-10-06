@@ -4,8 +4,26 @@ import java.util.stream.IntStream;
 
 public class FilterNumWithCondtion {
     public static void main(String[] args) {
+        IntStream.range(0, 10).forEach(System.out::println);
+        System.out.println("::::::::::::::::::::::::::::::::::::::");
+        IntStream.rangeClosed(0, 10).forEach(System.out::println);
+        System.out.println("2::::::::::::::::::::::::::::::::::::::");
+
+        IntStream.rangeClosed(101, 150).filter( n -> {
+                    int x = n % 10;
+                    int y = n / 10;
+                    int x1 = y % 10;
+                    int y1 = y / 10;
+                    int x2 = y1 % 10;
+                    //int y2 = y1 / 10;
+                    return  x + x2 == x1;
+                } )
+
+                .forEach(System.out::println);
+        System.out.println("3::::::::::::::::::::::::::::::::::::::");
+
         List<Integer> listOfIntegers = new ArrayList<>();
-        for (int i = 101; i <= 999 ; i++) {
+        for (int i = 101; i <= 150 ; i++) {
             listOfIntegers.add(i);
         }
 
@@ -33,8 +51,7 @@ public class FilterNumWithCondtion {
         IntStream.rangeClosed(100, 199)
                 .mapToObj(n -> "Number: " + n)
                 .forEach(System.out::println);
-        System.out.println("::::::::::::::::::::::::::::::::::::::");
-        IntStream.range(1000, 199).forEach(System.out::println);
+
 
 
 
