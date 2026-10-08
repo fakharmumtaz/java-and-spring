@@ -22,23 +22,21 @@ public class AccountController {
     }
 
     @GetMapping("/{id}")
-    public AccountResponse getAccount(
-            @PathVariable Long id) {
-
+    public AccountResponse getAccount(@PathVariable Long id) {
+        System.out.println("id:"+id);
         return service.getAccount(id);
     }
 
     @GetMapping("/")
     public List<AccountResponse> getAllAccount() {
-
+        System.out.println("getAllAccoun:");
         return service.getAllAccount();
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public AccountResponse createAccount(
-            @Valid @RequestBody AccountRequest request) {
-
+    public AccountResponse createAccount(@Valid @RequestBody AccountRequest request) {
+        System.out.println("request:"+request);
         return service.createAccount(request);
     }
 
