@@ -7,11 +7,11 @@ public class CountDuplicateChars {
         public static void main(String[] args) {
             // given input string
             String input = "JavaJavaEEb";
-
+            System.out.println("---------- input integer equivalents  ");
             input.chars().forEach(System.out::println);
-            System.out.println("----------");
+            System.out.println("---------- String representation  ");
             input.chars().mapToObj(c -> (char)c).forEach(System.out::println);
-            System.out.println("......................");
+            System.out.println("......................" + input );
 
             // convert string into stream
             Map< Character, Long > result =
@@ -19,7 +19,7 @@ public class CountDuplicateChars {
                     .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
             result.forEach( (k, v) -> {
-                if (v > 1) {
+                if (v >= 1) {
                     System.out.println(k + " : " + v);
                 }
             });

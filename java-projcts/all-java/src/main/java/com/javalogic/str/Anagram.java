@@ -39,7 +39,7 @@ public class Anagram {
         //Stream<Character> charStream =
         new String(str1).chars().mapToObj(c -> (char) c).forEach(System.out::print);
 
-        System.out.println("---");
+        System.out.println("\n---");
 
         new String(str2).chars().mapToObj(c -> (char) c).forEach(System.out::print);
 
