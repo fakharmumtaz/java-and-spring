@@ -99,17 +99,17 @@ public class SequencedCollectionExample {
         System.out.println("After additions: " + set1); // [C++, Java, Python, Rust]
 
         // 4. Access elements from both ends (getFirst / getLast)
-        //System.out.println("First Element: " + set.getFirst()); // C++
-        //System.out.println("Last Element: " + set.getLast());   // Rust
+        System.out.println("First Element: " + set1.getFirst()); // C++
+        System.out.println("Last Element: " + set1.getLast());   // Rust
 
         // 5. Get a reverse-ordered view of the collection (reversed)
-        //Set<String> reversedView2 = set reversed();
-        //System.out.println("Reversed View: " + reversedView1); // [Rust, Python, Java, C++]
+        SequencedSet<String> reversedView2 = set1.reversed();
+        System.out.println("Reversed View: " + reversedView2); // [Rust, Python, Java, C++]
 
         // 6. Remove elements from both ends (removeFirst / removeLast)
-        //reversedView1.removeFirst();
-        //reversedView1.removeLast();
-        //System.out.println("After removals: " + reversedView1); // [Java, Python]
+        reversedView2.removeFirst();
+        reversedView2.removeLast();
+        System.out.println("After removals: " + reversedView2); // [Java, Python]
 
     }
 }
