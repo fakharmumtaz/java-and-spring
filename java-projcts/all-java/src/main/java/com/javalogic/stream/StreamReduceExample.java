@@ -5,7 +5,7 @@ import java.util.Optional;
 
 public class StreamReduceExample {
     public static void main(String[] args) {
-        List<Integer> numbers = List.of(1, 2, 3, 4, 5);
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6);
 
         // 1. Accumulator Only: Returns an Optional (handles empty streams safely)
         Optional<Integer> sumOptional = numbers.stream()
