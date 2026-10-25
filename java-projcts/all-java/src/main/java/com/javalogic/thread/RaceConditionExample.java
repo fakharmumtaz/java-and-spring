@@ -1,4 +1,4 @@
-package com.javalogic.thrd;
+package com.javalogic.thread;
 //A race condition occurs when two or more threads access shared data and try to change it at the same time. Because the thread scheduling is unpredictable, the final result may vary, leading to bugs that are hard to reproduce.
 public class RaceConditionExample {
     static int counter = 0; // Shared variable

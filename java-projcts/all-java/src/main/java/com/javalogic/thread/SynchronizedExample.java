@@ -1,4 +1,4 @@
-package com.javalogic.thrd;
+package com.javalogic.thread;
 public class SynchronizedExample {
     private static int counter = 0;
 

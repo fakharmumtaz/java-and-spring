@@ -1,4 +1,4 @@
-package com.javalogic.thrd;
+package com.javalogic.thread;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

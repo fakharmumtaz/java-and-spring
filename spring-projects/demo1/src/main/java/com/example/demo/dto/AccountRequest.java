@@ -10,7 +10,7 @@ public record AccountRequest(
         String accountNumber,
 
         @NotBlank(message = "Customer name is required")
-        @Size(min = 3, max = 100)
+        @Size(min = 7, max = 100)
         String customerName,
 
         @NotNull(message = "Balance is required")
